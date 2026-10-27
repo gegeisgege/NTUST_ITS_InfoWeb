@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pertukaran Pelajar ke NTUST, Taiwan · Booth Gerald</title>
+<meta name="description" content="Info pertukaran pelajar ITS ke NTUST Taiwan: alur, dokumen, visa, biaya, dan tempat tinggal.">
+<style>
+:root{
+  --bg:#fbf7f0; --card:#ffffff; --ink:#23262b; --muted:#5b616b;
+  --blue:#1f4e79; --blue-d:#163a5a; --red:#c8453b; --sand:#efe6d6; --line:#e2d9c8;
+  --r:10px; --fs:1.125rem;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#171a1f;--card:#1f242b;--ink:#eceae4;--muted:#aab0ba;--blue:#8fbbe6;--blue-d:#6fa3d4;--red:#ff8f82;--sand:#272d36;--line:#343b46}
+}
+*{box-sizing:border-box}
+html{-webkit-tap-highlight-color:transparent;scroll-behavior:smooth;scroll-padding-top:84px;font-size:var(--fs)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+h1,h2{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:700;letter-spacing:-.01em}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.65}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* top bar */
+header.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:16px;padding-top:6px;padding-bottom:6px}
+.brand{font-weight:700;color:var(--blue);text-decoration:none;white-space:nowrap}
+nav{flex:1;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+nav::-webkit-scrollbar{display:none}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:12px 14px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:.92rem;white-space:nowrap}
+nav a.on{background:var(--sand);font-weight:700;color:var(--blue-d)}
+@media (prefers-color-scheme:dark){nav a.on{color:var(--ink)}}
+@media (hover:hover){nav a:hover{background:var(--sand)}}
+.fsbtn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:0 16px;min-height:46px;min-width:52px;font-weight:600;font:inherit;font-size:.9rem;cursor:pointer;white-space:nowrap}
+
+/* hero */
+.hero{padding:48px 0;display:flex;align-items:center;min-height:calc(100vh - 64px);min-height:calc(100svh - 64px)}
+.hero .wrap{width:100%}
+.hero .wrap{display:grid;gap:28px;grid-template-columns:1.2fr .8fr;align-items:center}
+.eyebrow{display:inline-block;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--red)}
+h1{font-size:clamp(2rem,5.2vw,3.3rem);line-height:1.15;margin:14px 0 12px;color:var(--blue-d)}
+@media (prefers-color-scheme:dark){h1{color:var(--ink)}}
+.lead{font-size:1.12rem;color:var(--muted);max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-block;padding:16px 26px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--blue);color:var(--blue)}
+.btn.main{background:var(--blue);color:#fff}
+@media (prefers-color-scheme:dark){.btn.main{color:#10151b}}
+.btn:active{transform:scale(.98)}
+/* passport-stamp motif */
+.pass{font-size:1.02rem;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;max-width:340px;justify-self:end;width:100%}
+.route{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;background:var(--blue);color:#fff;font-family:Georgia,serif;font-size:1.25rem}
+@media (prefers-color-scheme:dark){.route{color:#10151b}}
+.route i{font-style:normal;opacity:.8}
+.pass dl{margin:0;padding:6px 22px 10px;border-top:2px dashed var(--line)}
+.pass dl div{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.pass dl div:last-child{border-bottom:0}
+.pass dt{color:var(--muted);font-size:.9rem}.pass dd{margin:0;font-weight:600;text-align:right}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:1.65rem;margin:0 0 6px;color:var(--blue-d)}
+@media (prefers-color-scheme:dark){h2{color:var(--ink)}}
+.sub{color:var(--muted);margin:0 0 22px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px}
+.card h3{margin:0 0 6px;font-size:1.08rem}
+.card p{margin:0;color:var(--muted)}
+.tag{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;font-weight:700;color:var(--red);margin-bottom:6px}
+.note{background:var(--sand);padding:14px 18px;border-radius:var(--r);margin:22px 0}
+.note b{text-transform:uppercase;font-size:.75rem;letter-spacing:.09em;margin-right:6px}
+
+/* steps */
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 22px 58px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700}
+@media (prefers-color-scheme:dark){ol.steps li::before{color:#10151b}}
+ol.steps li::after{content:"";position:absolute;left:19px;top:44px;bottom:4px;width:2px;background:var(--line)}
+ol.steps li:last-child::after{display:none}
+ol.steps h3{margin:0 0 2px;font-size:1.05rem}
+ol.steps p{margin:0;color:var(--muted)}
+
+/* checklist */
+.check{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.check label{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 16px;min-height:56px;cursor:pointer}
+.check input{width:26px;height:26px;margin-top:1px;accent-color:var(--blue);flex:none}
+.check input:checked+span{text-decoration:line-through;color:var(--muted)}
+.prog{height:10px;background:var(--sand);border-radius:99px;overflow:hidden;margin:0 0 16px}
+.prog i{display:block;height:100%;width:0;background:var(--blue);transition:width .3s}
+
+/* cost */
+.cost{display:grid;gap:10px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.row input{width:150px;min-height:46px;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);text-align:right}
+.total{background:var(--blue);color:#fff;border-radius:var(--r);padding:18px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-size:1.15rem}
+@media (prefers-color-scheme:dark){.total{color:#10151b}}
+.total small{width:100%;opacity:.85;font-size:.85rem}
+
+/* tabs-ish details */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
+summary{cursor:pointer;padding:18px 20px;min-height:56px;align-items:center;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--red)}
+details[open] summary::after{content:"–"}
+details div{padding:0 18px 16px;color:var(--muted)}
+summary::-webkit-details-marker{display:none}
+
+.story{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.photo{aspect-ratio:4/3;border:2px dashed var(--line);border-radius:var(--r);display:grid;place-items:center;text-align:center;color:var(--muted);padding:12px;font-size:.9rem;background:var(--sand)}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.game{padding:24px}
+.game .q{font-size:1.2rem;font-weight:600;margin:6px 0 18px;min-height:3.4em}
+.game .ans{display:flex;gap:12px;flex-wrap:wrap}
+.game button{flex:1;min-width:160px;min-height:60px;padding:16px;font:inherit;font-weight:600;border-radius:12px;border:2px solid var(--blue);background:transparent;color:var(--blue);cursor:pointer}
+.game button:active{background:var(--sand)}
+.game button:disabled{opacity:.6;cursor:default}
+.game .fb{margin:16px 0 0;padding:12px 16px;border-radius:12px;background:var(--sand)}
+.game .fb b.ok{color:#2e7d4f}.game .fb b.no{color:var(--red)}
+.game .next{margin-top:14px;background:var(--blue);color:#fff;border-color:var(--blue);flex:none}
+.game .next:hover{background:var(--blue-d)}
+@media (prefers-color-scheme:dark){.game .next{color:#10151b}}
+.top{position:fixed;right:20px;bottom:20px;width:54px;height:54px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1.4rem;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.15);opacity:0;pointer-events:none;transition:opacity .2s}
+.top.show{opacity:1;pointer-events:auto}
+footer{padding:34px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+footer ul{padding-left:18px}
+@media (max-width:700px){.hero{padding:40px 0}.hero .wrap{grid-template-columns:1fr}.pass{justify-self:start;max-width:none}.brand{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#isi">Langsung ke isi</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#atas">NTUST Exchange</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#alur">Alur</a></li>
+        <li><a href="#dokumen">Dokumen</a></li>
+        <li><a href="#visa">Visa</a></li>
+        <li><a href="#biaya">Biaya</a></li>
+        <li><a href="#tinggal">Hunian</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#main">Main</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <button class="fsbtn" id="fs" type="button" aria-label="Perbesar ukuran huruf">A+</button>
+  </div>
+</header>
+
+<main id="isi">
+<div class="hero" id="atas">
+    <div class="wrap">
+    <div>
+      <span class="eyebrow">Pertukaran Pelajar · ITS dan NTUST</span>
+      <h1>Kuliah satu semester di Taipei</h1>
+      <p class="lead">Saya Gerald, mahasiswa Sistem Informasi ITS yang mengikuti pertukaran pelajar di NTUST (Taiwan Tech) pada 2025. Halaman ini merangkum langkah pendaftaran, dokumen, visa, dan biaya yang perlu kamu siapkan.</p>
+      <div class="cta">
+        <a class="btn main" href="#alur">Mulai dari alurnya</a>
+        <a class="btn" href="#biaya">Hitung biaya</a>
+      </div>
+    </div>
+    <aside class="pass" aria-label="Ringkasan program">
+      <div class="route"><span>Surabaya</span><i aria-hidden="true">→</i><span>Taipei</span></div>
+      <dl>
+        <div><dt>Kampus asal</dt><dd>ITS</dd></div>
+        <div><dt>Kampus tujuan</dt><dd>NTUST</dd></div>
+        <div><dt>Periode</dt><dd>Agu 2025 – Jan 2026</dd></div>
+        <div><dt>Semester</dt><dd>7</dd></div>
+      </dl>
+    </aside>
+  </div>
+</div>
+
+<section id="tentang"><div class="wrap">
+  <h2>Tentang NTUST</h2>
+  <p class="sub">Kampus sains dan teknologi di Taipei yang bekerja sama dengan ITS.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Kampus</span><h3>Taiwan Tech (NTUST)</h3><p>Kampus teknik dan teknologi di Taipei, dekat stasiun MRT Gongguan. Mudah ke mana-mana tanpa kendaraan pribadi.</p></div>
+    <div class="card"><span class="tag">Bahasa</span><h3>Banyak kelas berbahasa Inggris</h3><p>Kamu bisa kuliah dengan bahasa Inggris. Belajar sedikit Mandarin tetap sangat membantu sehari-hari.</p></div>
+    <div class="card"><span class="tag">Program</span><h3>Pertukaran 1 semester</h3><p>Kamu tetap mahasiswa ITS dan mengambil mata kuliah di NTUST yang nanti bisa diakui sebagai SKS.</p></div>
+    <div class="card"><span class="tag">Kota</span><h3>Taipei</h3><p>Transportasi umum rapi, aman, makanan murah dan enak, dan komunitas pelajar Indonesia cukup besar.</p></div>
+  </div>
+</div></section>
+
+<section id="alur"><div class="wrap">
+  <h2>Alur dari daftar sampai berangkat</h2>
+  <p class="sub">Urutan umumnya begini. Tanggal pastinya selalu mengikuti pengumuman Kantor Urusan Internasional ITS.</p>
+  <ol class="steps">
+    <li><h3>Pantau pengumuman &amp; cek syarat</h3><p>Ikuti pengumuman program di situs internasional ITS dan departemenmu. Biasanya ada syarat IPK, bahasa Inggris, dan semester minimal.</p></li>
+    <li><h3>Daftar &amp; seleksi di ITS</h3><p>Kumpulkan berkas, ikuti seleksi, dan tunggu hasil nominasi dari ITS.</p></li>
+    <li><h3>Nominasi ke NTUST &amp; daftar di sistem mereka</h3><p>ITS menominasikanmu, lalu kamu mengisi aplikasi dan unggah dokumen lewat sistem pertukaran NTUST.</p></li>
+    <li><h3>Terima Letter of Acceptance</h3><p>Keputusan akhir ada di NTUST. Jangan beli tiket pesawat sebelum surat penerimaan resmi ini ada di tanganmu.</p></li>
+    <li><h3>Urus visa &amp; asuransi</h3><p>Setelah surat penerimaan keluar, ajukan visa. Lihat bagian Visa di bawah.</p></li>
+    <li><h3>Cari tempat tinggal, lalu berangkat</h3><p>Asrama kampus sangat terbatas, jadi mulai cari hunian lebih awal.</p></li>
+    <li><h3>Orientasi, kuliah, dan urus ARC</h3><p>Ikut orientasi, daftar mata kuliah, dan urus kartu izin tinggal (ARC) jika memakai visa residen.</p></li>
+  </ol>
+</div></section>
+
+<section id="dokumen"><div class="wrap">
+  <h2>Dokumen &amp; formulir</h2>
+  <p class="sub">Daftar umum yang diminta. Centang sambil kamu siapkan, progresnya tersimpan di perangkat ini.</p>
+  <div class="prog" role="progressbar" aria-label="Progres dokumen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="bar"></i></div>
+  <ul class="check" id="list"></ul>
+  <div class="note"><b>Penting:</b> daftar ini gambaran umum. Persyaratan resmi tiap periode bisa berubah, jadi selalu cocokkan dengan panduan terbaru dari ITS dan NTUST.</div>
+</div></section>
+
+<section id="visa"><div class="wrap">
+  <h2>Visa &amp; izin tinggal</h2>
+  <p class="sub">Kamu mengurus visa sendiri, bukan kampus.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Kapan</span><h3>Setelah ada surat penerimaan</h3><p>Visa diajukan setelah Letter of Acceptance dari NTUST keluar, lewat Biro Urusan Konsuler Taiwan atau kantor perwakilan Taiwan di Indonesia (TETO).</p></div>
+    <div class="card"><span class="tag">Jenis</span><h3>Visitor atau Resident</h3><p>Umumnya, pertukaran kurang dari 180 hari memakai Visitor Visa, dan lebih dari 180 hari memakai Resident Visa. Konfirmasi jenis yang sesuai ke TETO.</p></div>
+    <div class="card"><span class="tag">Setelah tiba</span><h3>ARC (kartu izin tinggal)</h3><p>Jika memakai Resident Visa, kamu perlu mengurus ARC setelah tiba. Ada batas waktu dan pemeriksaan kesehatan, jadi catat tenggatnya.</p></div>
+    <div class="card"><span class="tag">Kesehatan</span><h3>Asuransi &amp; cek kesehatan</h3><p>Pertukaran pelajar umumnya wajib punya asuransi kesehatan dan kecelakaan, serta bukti pemeriksaan kesehatan sesuai ketentuan.</p></div>
+  </div>
+  <div class="note"><b>Tips:</b> siapkan paspor dengan masa berlaku cukup (minimal 6 bulan setelah rencana kepulangan) sejak awal.</div>
+</div></section>
+
+<section id="biaya"><div class="wrap">
+  <h2>Biaya &amp; pendanaan</h2>
+  <p class="sub">Kamu bisa ubah angkanya sendiri. Nilai awal hanya contoh kasar, bukan tarif resmi.</p>
+  <div class="grid" style="margin-bottom:22px">
+    <div class="card"><span class="tag">Kuliah</span><h3>Uang kuliah</h3><p>Umumnya di NTUST tidak ada biaya kuliah untuk pertukaran, dan kamu tetap membayar UKT ke ITS. Pastikan ke ITS.</p></div>
+    <div class="card"><span class="tag">Beasiswa</span><h3>Pendanaan</h3><p>NTUST tidak menyediakan beasiswa untuk mahasiswa pertukaran. Tanyakan soal dukungan dana ke Kantor Urusan Internasional ITS dan pantau beasiswa lain yang terbuka.</p></div>
+  </div>
+  <div class="cost" id="cost" aria-live="polite"></div>
+  <div class="total" style="margin-top:12px"><span>Perkiraan per bulan</span><strong id="mo">–</strong><small id="all"></small></div>
+  <div class="note"><b>Catatan:</b> belum termasuk tiket pesawat, visa, asuransi, dan dana darurat. Nilai tukar NTD ke rupiah berubah, jadi cek kurs terbaru.</div>
+</div></section>
+
+<section id="tinggal"><div class="wrap">
+  <h2>Hunian &amp; kehidupan di Taipei</h2>
+  <p class="sub">Hal yang paling sering ditanyakan calon peserta.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Hunian</span><h3>Cari sendiri</h3><p>NTUST menyatakan tidak bisa menyediakan asrama untuk mahasiswa pertukaran karena peminat banyak. Kamu perlu mencari hunian swasta, misalnya kos atau apartemen sewa bersama.</p></div>
+    <div class="card"><span class="tag">Transportasi</span><h3>MRT &amp; bus</h3><p>Kartu EasyCard dipakai untuk MRT, bus, dan bahkan minimarket. Sepeda sewa YouBike juga populer.</p></div>
+    <div class="card"><span class="tag">Makan</span><h3>Halal &amp; vegetarian</h3><p>Ada pilihan makanan halal di sekitar Taipei, dan opsi vegetarian cukup mudah dicari. Tanyakan komunitas pelajar Indonesia untuk rekomendasi.</p></div>
+    <div class="card"><span class="tag">Komunitas</span><h3>PPI Taiwan &amp; teman-teman</h3><p>Banyak mahasiswa Indonesia di Taiwan yang siap membantu. Kenalan sejak sebelum berangkat itu sangat menolong.</p></div>
+  </div>
+</div></section>
+
+<section id="jadwal"><div class="wrap">
+  <h2>Jadwal pertukaran saya</h2>
+  <p class="sub">Sebagai gambaran waktu, berikut periode pertukaran saya.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Semester</span><h3>Semester 7</h3><p>Saya berangkat saat berada di semester 7 di ITS.</p></div>
+    <div class="card"><span class="tag">Di Taiwan</span><h3>Agustus 2025 – Januari 2026</h3><p>Sekitar 6 bulan di Taiwan, termasuk persiapan awal dan waktu setelah kuliah.</p></div>
+    <div class="card"><span class="tag">Kuliah</span><h3>Sekitar 5 bulan</h3><p>Masa perkuliahan aktif di NTUST sekitar lima bulan.</p></div>
+  </div>
+</div></section>
+
+<section id="main"><div class="wrap">
+  <h2>Mini game: Mitos atau Fakta?</h2>
+  <p class="sub">Tujuh pernyataan soal pertukaran ke NTUST. Tebak yang benar.</p>
+  <div class="card game" id="game" aria-live="polite"></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>Pertanyaan yang sering muncul</h2>
+  <p class="sub">Tekan pertanyaannya untuk membuka jawabannya.</p>
+  <details><summary>Perlu bisa bahasa Mandarin?</summary><div>Tidak wajib untuk kuliah karena banyak kelas memakai bahasa Inggris. Untuk keseharian, bisa beberapa kalimat dasar akan sangat membantu.</div></details>
+  <details><summary>Apakah pasti diterima kalau lolos seleksi ITS?</summary><div>Belum pasti. Keputusan akhir ada di NTUST, jadi tunggu Letter of Acceptance sebelum membeli tiket.</div></details>
+  <details><summary>SKS-nya diakui di ITS?</summary><div>Umumnya mata kuliah dipilih lewat persetujuan departemen agar bisa dikonversi. Diskusikan dengan dosen wali sebelum berangkat.</div></details>
+  <details><summary>Boleh kerja paruh waktu?</summary><div>Aturan bekerja bagi pelajar asing di Taiwan sangat ketat dan bergantung jenis visa. Jangan berasumsi bisa. Tanyakan ke NTUST.</div></details>
+  <details><summary>Bagaimana kalau aku tidak punya banyak dana?</summary><div>Mulai dengan menghitung biaya di atas, lalu tanyakan opsi pendanaan ke ITS. Hidup di Taipei bisa dibuat hemat dengan memasak dan memakai transportasi umum.</div></details>
+</div></section>
+
+<section id="kontak"><div class="wrap">
+  <h2>Kontak &amp; sumber resmi</h2>
+  <p class="sub">Untuk informasi terbaru, rujuk langsung ke sumber resmi.</p>
+  <div class="grid">
+    <div class="card"><h3>NTUST OIA</h3><p><a href="https://oia.ntust.edu.tw/" rel="noopener">oia.ntust.edu.tw</a><br>Kantor Urusan Internasional NTUST.</p></div>
+    <div class="card"><h3>ITS Internasional</h3><p><a href="https://www.its.ac.id/international/" rel="noopener">its.ac.id/international</a><br>Pengumuman dan pendaftaran dari ITS.</p></div>
+    <div class="card"><h3>Visa Taiwan</h3><p><a href="https://visa.boca.gov.tw/" rel="noopener">visa.boca.gov.tw</a><br>Biro Urusan Konsuler, Kemlu Taiwan.</p></div>
+    <div class="card"><h3>Hubungi saya</h3><p>Instagram: <b>@isi_akunmu</b><br>Email: isi@emailmu.com</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>Dibuat oleh Gerald untuk booth pertukaran pelajar ITS dan NTUST. Informasi bersifat umum dan bisa berubah, jadi selalu cek sumber resmi.</p>
+</div></footer>
+<button class="top" id="top" type="button" aria-label="Kembali ke atas">↑</button>
+
+<script>
+/* ===== Mudah diedit ===== */
+const DOCS=[
+ "Formulir pendaftaran pertukaran dari ITS",
+ "Paspor (masa berlaku cukup panjang)",
+ "Transkrip nilai terbaru",
+ "Bukti kemampuan bahasa Inggris",
+ "Surat nominasi dari ITS",
+ "Formulir aplikasi NTUST (lewat sistem mereka)",
+ "Rencana studi / daftar mata kuliah yang akan diambil",
+ "Pas foto sesuai ketentuan",
+ "Surat penerimaan (Letter of Acceptance) dari NTUST",
+ "Aplikasi visa ke TETO / Biro Konsuler Taiwan",
+ "Asuransi kesehatan dan kecelakaan",
+ "Pemeriksaan kesehatan sesuai ketentuan"
+];
+const COSTS=[ /* angka contoh dalam Rupiah, ganti dengan pengalamanmu */
+ {k:"Sewa hunian",v:4500000},{k:"Makan",v:3500000},
+ {k:"Transportasi",v:500000},{k:"Lain-lain (pulsa, jajan, jalan-jalan)",v:1000000}
+];
+const MONTHS=5;
+/* ======================== */
+const safe=(f)=>{try{return f()}catch(e){return null}};
+const list=document.getElementById('list'),bar=document.getElementById('bar');
+let saved=safe(()=>JSON.parse(localStorage.getItem('docs')))||{};
+function upd(){
+  const n=DOCS.filter((_,i)=>saved[i]).length,p=Math.round(n/DOCS.length*100);
+  bar.style.width=p+'%';bar.parentNode.setAttribute('aria-valuenow',p);
+}
+DOCS.forEach((t,i)=>{
+  const li=document.createElement('li');
+  li.innerHTML='<label><input type="checkbox"><span></span></label>';
+  const c=li.querySelector('input');li.querySelector('span').textContent=t;c.checked=!!saved[i];
+  c.onchange=()=>{saved[i]=c.checked;safe(()=>localStorage.setItem('docs',JSON.stringify(saved)));upd()};
+  list.appendChild(li);
+});upd();
+
+const box=document.getElementById('cost'),fmt=n=>'Rp '+Math.round(n).toLocaleString('id-ID');
+COSTS.forEach((c,i)=>{
+  const r=document.createElement('div');r.className='row';
+  r.innerHTML='<label for="c'+i+'"></label><input id="c'+i+'" type="number" min="0" step="50000" inputmode="numeric">';
+  r.querySelector('label').textContent=c.k;const inp=r.querySelector('input');inp.value=c.v;
+  inp.oninput=calc;box.appendChild(r);
+});
+function calc(){
+  const s=[...box.querySelectorAll('input')].reduce((a,i)=>a+(+i.value||0),0);
+  document.getElementById('mo').textContent=fmt(s);
+  document.getElementById('all').textContent='Untuk '+MONTHS+' bulan: '+fmt(s*MONTHS)+' (di luar tiket, visa, dan asuransi)';
+}calc();
+
+let big=false;
+document.getElementById('fs').onclick=function(){
+  big=!big;document.documentElement.style.setProperty('--fs',big?'1.3rem':'1.125rem');
+  this.textContent=big?'A−':'A+';
+};
+
+/* ===== Mini game ===== */
+const QS=[
+ ["NTUST menjamin asrama kampus untuk semua mahasiswa pertukaran.",false,"Mitos. NTUST menyatakan tidak bisa menyediakan asrama karena peminat banyak, jadi hunian dicari sendiri."],
+ ["Boleh beli tiket pesawat sebelum Letter of Acceptance keluar.",false,"Mitos. NTUST meminta kamu menunggu surat penerimaan resmi dulu."],
+ ["Visa Taiwan diurus sendiri oleh mahasiswa.",true,"Fakta. Kamu mengajukannya sendiri setelah surat penerimaan keluar."],
+ ["NTUST menyediakan beasiswa untuk mahasiswa pertukaran.",false,"Mitos. Beasiswa NTUST untuk mahasiswa yang menempuh gelar, bukan pertukaran."],
+ ["Banyak kelas di NTUST bisa diikuti dengan bahasa Inggris.",true,"Fakta. Tetap enak kalau bisa sedikit Mandarin untuk keseharian."],
+ ["Lolos seleksi di ITS berarti pasti diterima NTUST.",false,"Mitos. Keputusan akhir diambil NTUST."],
+ ["EasyCard bisa dipakai untuk MRT dan bus di Taipei.",true,"Fakta. Bisa juga untuk belanja di minimarket."]
+];
+const g=document.getElementById('game');let qi=0,sc=0;
+function show(){
+  if(qi>=QS.length){
+    const msg=sc>=6?'Wah, kamu siap berangkat!':sc>=4?'Lumayan! Baca lagi bagian alur dan visa ya.':'Tenang, semua bisa dipelajari. Mulai dari bagian Alur.';
+    g.innerHTML='<h3></h3><p class="q"></p><div class="ans"><button type="button" class="next" id="again">Main lagi</button></div>';
+    g.querySelector('h3').textContent='Skor kamu: '+sc+' dari '+QS.length;g.querySelector('.q').textContent=msg;
+    document.getElementById('again').onclick=()=>{qi=0;sc=0;show()};return;
+  }
+  g.innerHTML='<span class="tag">Soal '+(qi+1)+' dari '+QS.length+'</span><p class="q"></p><div class="ans"><button type="button" data-a="1">Fakta</button><button type="button" data-a="0">Mitos</button></div><div id="fb"></div>';
+  g.querySelector('.q').textContent=QS[qi][0];
+  g.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{
+    const ok=(b.dataset.a==='1')===QS[qi][1];if(ok)sc++;
+    g.querySelectorAll('[data-a]').forEach(x=>x.disabled=true);
+    const fb=document.getElementById('fb');
+    fb.innerHTML='<p class="fb"><b class="'+(ok?'ok':'no')+'">'+(ok?'Benar! ':'Belum tepat. ')+'</b><span></span></p><div class="ans"><button type="button" class="next" id="nx"></button></div>';
+    fb.querySelector('span').textContent=QS[qi][2];
+    const nx=document.getElementById('nx');nx.textContent=qi===QS.length-1?'Lihat skor':'Lanjut';
+    nx.onclick=()=>{qi++;show()};nx.focus();
+  });
+}show();
+/* ===== Navigasi aktif, tombol atas, reset otomatis ===== */
+const links=[...document.querySelectorAll('nav a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+const topBtn=document.getElementById('top');
+function onScroll(){
+  topBtn.classList.toggle('show',scrollY>500);
+  let cur=-1;secs.forEach((el,i)=>{if(el&&el.getBoundingClientRect().top<140)cur=i});
+  links.forEach((a,i)=>{a.classList.toggle('on',i===cur);if(i===cur)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')});
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+topBtn.onclick=()=>scrollTo({top:0});
+/* Reset otomatis saat tablet dibiarkan (detik) supaya pengunjung berikutnya mulai dari awal */
+const IDLE=120;let dirty=false,timer;
+function resetAll(){
+  if(!dirty)return;dirty=false;
+  saved={};safe(()=>localStorage.removeItem('docs'));
+  list.querySelectorAll('input').forEach(i=>i.checked=false);upd();
+  box.querySelectorAll('input').forEach((i,k)=>i.value=COSTS[k].v);calc();
+  document.querySelectorAll('details').forEach(d=>d.open=false);
+  qi=0;sc=0;show();big=false;document.documentElement.style.setProperty('--fs','1.125rem');document.getElementById('fs').textContent='A+';
+  scrollTo({top:0});
+}
+function poke(){dirty=true;clearTimeout(timer);timer=setTimeout(resetAll,IDLE*1000)}
+['pointerdown','keydown','scroll'].forEach(e=>addEventListener(e,poke,{passive:true}));
+</script>
+</body>
+</html>
